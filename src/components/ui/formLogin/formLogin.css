@@ -1,0 +1,50 @@
+.form-container-login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.form-container-login h1{
+    font-size: 4em;
+    color: #000000;
+    font-family: "UnifrakturMaguntia", serif;
+    text-align: center;
+
+}
+.form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px 0;
+}
+.form-login input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+.form-login button {
+    padding: 1rem 2rem;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s;
+    &:hover{
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,187 @@
+.home-container{   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+}
+
+.home-content{
+    margin-top: 120rem;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+}
+/*responsive*/
+@media screen and (max-width: 868px){
+    .home-content{
+        margin-top: 140rem;
+    }
+}
+
+.home-img{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    background-image: url('../../assets/imgHome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 999;
+    background-attachment: fixed; 
+ 
+
+}
+
+.home-img:hover{
+    filter: grayscale(0%);
+}
+
+.home-img h1{
+    font-size: 7em;
+    line-height: 1.1;
+    color: #ffffff;
+    font-family: "UnifrakturMaguntia", serif;
+    text-align: center;
+    
+}
+
+.home-img p{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.home-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.home-about-content-text{
+    box-shadow: 0 10px 10px 10px  rgba(0,0,0,0.5);  
+    font-size: 2em;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 70%;
+
+    
+}
+
+/*card*/
+
+.card-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15rem;
+
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.card-text-impulsa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    background-attachment: fixed;   
+    background-image: url('../../assets/band2.png');
+    background-position: center;   
+    filter: grayscale(60%);
+    
+    
+
+}
+.card-text-impulsa h2{
+    font-size: 4em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.card-text-impulsa p{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+
+.card-text-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    background-attachment: fixed;   
+    background-image: url('../../assets/conciert1.png');
+    background-position: center;
+    filter: grayscale(60%); 
+
+}
+.card-text-experience h2{
+    font-size: 4em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.card-text-experience p{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.card-text-conect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+}
+.card-text-conect h2{
+    font-size: 4em;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.card-text-conect p{
+    font-size: 2em;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
