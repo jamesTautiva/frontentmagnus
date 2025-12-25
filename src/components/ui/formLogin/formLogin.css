@@ -5,12 +5,11 @@
     flex-direction: column;
     width: 50%;
     height: 80%;
-    background-color: #f8f9fa;
+    background-color: var(--colorBackground);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .form-container-login h1{
     font-size: 4em;
-    color: #000000;
     font-family: "UnifrakturMaguntia", serif;
     text-align: center;
 
@@ -27,11 +26,13 @@
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
     outline: none;
+    background: transparent;
+    width: 47%; 
 }
 .form-login button {
     padding: 1rem 2rem;

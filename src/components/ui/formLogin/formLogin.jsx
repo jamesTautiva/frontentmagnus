@@ -22,7 +22,7 @@ export const FormLogin = () => {
             return;
         }
         try { 
-            const response = await axios.post('https://backendapimusic-production.up.railway.app/api/login',{
+            const response = await axios.post('https://blackamp-api.onrender.com/auth/login',{
                 email: formData.email,
                 password: formData.password,
             })
@@ -45,6 +45,8 @@ export const FormLogin = () => {
                 });
             alert('Ingreso exitoso!');
             console.log('Ingreso exitoso:', response.data);
+            //agregar datos del ususario artista al local storage
+            localStorage.setItem('artistData', JSON.stringify(response.data.user));
                         
             setError('');
             setFormData({
@@ -81,7 +83,7 @@ export const FormLogin = () => {
                     required
                 />
                 {error && <p className="error">{error}</p>}
-                <button type="submit">Register</button>
+                <button type="submit">Loging</button>
             </form>
         </div>
     )

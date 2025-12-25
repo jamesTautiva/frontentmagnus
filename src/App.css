@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Song+Myung&family=UnifrakturMaguntia&display=swap');
-#root {
-  
-  text-align: center;
 
+#root {
+
+  text-align: center;
+  --colorBackground: #121212;
+  --colorBackgroundSecondary: #181818;
+  --colorText: #ffffff;
+  --colorPrimary: #1db954;
+  --colorPrimaryOpas: #1db954e8;
+  --colorPrimaryHover: #1ed760;
+  --colorSecondary: #b3b3b3;
+  --colorError: #ff4d4f;
+  --colorSuccess: #52c41a;
+  color: var(--colorText);
 }
 
 /*animaciones*/
@@ -12,12 +22,13 @@
   from {
     opacity: 0%;
   }
+
   to {
     opacity: 100%;
-  
+
   }
 }
 
-body{
-  background-color: rgb(197, 197, 197);
+body {
+  background-color: #1c1c1c;
 }

@@ -1,0 +1,39 @@
+.dashboard-page {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  background-color: var(--colorBackground);
+}
+
+.dashboard-navbar {
+  grid-area: 1 / 1 / 11 / 3;
+}
+
+.dashboard-content {
+  grid-area: 1 / 3 / 11 / 11;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: var(--colorBackground);
+  color: var(--colorText);
+  font-family: 'Inter', sans-serif;
+
+}
+
+.dashboard-outlet {
+  padding: 20px;
+  background-color: var(--colorBackgroundSecondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  height: calc(100vh - 40px);
+  /* Adjust based on margin/padding */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #333;
+}

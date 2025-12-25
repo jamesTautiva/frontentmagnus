@@ -1,0 +1,133 @@
+ .sidebar {
+   padding: 20px;
+   background-color: var(--colorBackgroundSecondary);
+   color: var(--colorText);
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 99.5%;
+   border-radius: 8px;
+   margin: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+   .sidebar-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-bottom: 15px;
+     border-bottom: 1px solid #333;
+
+     .profile-pic {
+       width: 45px;
+       height: 45px;
+       border-radius: 50%;
+       object-fit: cover;
+       margin-right: 15px;
+       border: 2px solid var(--colorPrimary);
+
+       &:hover {
+         cursor: pointer;
+         filter: brightness(1.2);
+         transition: filter 0.3s ease;
+       }
+
+     }
+
+     .profile-placeholder {
+       width: 40px;
+       height: 40px;
+       background: #333;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: var(--colorSecondary);
+     }
+
+     .fullscreen-btn {
+       background: none;
+       border: none;
+       color: var(--colorSecondary);
+       font-size: 1.2rem;
+       cursor: pointer;
+       transition: color 0.3s;
+
+       &:hover {
+         color: var(--colorPrimary);
+       }
+     }
+   }
+ }
+
+ .sidebar-user {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .profile-pic {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     object-fit: cover;
+     cursor: pointer;
+     margin-top: 10px;
+     border: 3px solid var(--colorPrimary);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   }
+
+   .profile-placeholder {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background: #333;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--colorSecondary);
+     cursor: pointer;
+     margin-top: 10px;
+   }
+
+   .sidebar-footer {
+     margin-top: 10px;
+     position: fixed;
+     top: 70px;
+     right: 20px;
+
+     button.logout-btn {
+       background: var(--colorError);
+       color: white;
+       border: none;
+       padding: 8px 16px;
+       border-radius: 20px;
+       display: flex;
+       align-items: center;
+       gap: 8px;
+       cursor: pointer;
+       font-size: 0.9rem;
+       font-weight: 600;
+       transition: background 0.3s, transform 0.2s;
+
+       &:hover {
+         background: #ff7875;
+         transform: translateY(-2px);
+       }
+     }
+   }
+ }
+
+ .back-icon {
+   width: 35px;
+   height: 30px;
+   margin-right: 5px;
+   color: var(--colorSecondary);
+   cursor: pointer;
+   transition: color 0.3s;
+
+   &:hover {
+     color: var(--colorPrimary);
+   }
+
+ }

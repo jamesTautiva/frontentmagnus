@@ -7,6 +7,7 @@ import { Concierts } from './pages/concierts/concierts';
 import { News } from './pages/news/news';
 import { Register } from './pages/register/register';
 import { Login } from './pages/login/login';
+import { Dashboard } from './pages/dashboard/dashboard';
 import './App.css'
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/bands" element={<Bands />} />
         <Route path="/concierts" element={<Concierts />} />
         <Route path="/news" element={<News />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   

@@ -1,0 +1,155 @@
+.create-album-container {
+    background-color: var(--colorBackgroundSecondary);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 2rem auto;
+    color: var(--colorText);
+    border: 1px solid #333;
+}
+
+.create-album-container h1,
+.create-album-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--colorPrimary);
+    font-weight: 600;
+}
+
+.create-album-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Modal overlay to cover full screen with background blur */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    /* top, right, bottom, left = 0 */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal content container */
+.modal-content {
+    background-color: var(--colorBackgroundSecondary);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--colorText);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Ensure form takes full width inside modal */
+.modal-content .create-album-form {
+    width: 100%;
+}
+
+.create-album-form input,
+.create-album-form select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: var(--colorBackground);
+    color: var(--colorText);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-album-form input:focus,
+.create-album-form select:focus {
+    outline: none;
+    border-color: var(--colorPrimary);
+    box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.2);
+}
+
+.create-album-form input[type="file"] {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px dashed #555;
+    cursor: pointer;
+}
+
+.create-album-form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--colorSecondary);
+    cursor: pointer;
+}
+
+.create-album-form button {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--colorPrimary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+.create-album-form button:hover {
+    background-color: var(--colorPrimaryHover);
+    transform: translateY(-2px);
+}
+
+.create-album-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.create-album-container li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.create-album-container li a {
+    color: var(--colorPrimary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.create-album-container li a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}

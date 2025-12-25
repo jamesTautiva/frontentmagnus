@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 250vh;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: var(--colorBackground);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 2000;
 }
@@ -75,10 +75,13 @@
 .home-about-content-text{
     box-shadow: 0 10px 10px 10px  rgba(0,0,0,0.5);  
     font-size: 2em;
-    color: #000000;
+    color: var(--colorText);
     font-family: "Poppins", sans-serif;
     text-align: center;
     width: 70%;
+    background-color: #474747;
+    border-radius: 20px;
+    
 
     
 }
@@ -102,7 +105,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #bbbbbb;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: 0.5s ease;
@@ -184,4 +187,44 @@
     color: #000000;
     font-family: "Poppins", sans-serif;
     text-align: center;
+}
+.line-break{
+    border-left: 2px solid #000000;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.app-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    img{
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+}
+/*responsive*/
+
+@media screen and (max-width: 868px){
+    .card-text-impulsa h2,
+    .card-text-experience h2,
+    .card-text-conect h2{
+        font-size: 2.5em;
+    }
+    .card-text-impulsa p,
+    .card-text-experience p,
+    .card-text-conect p{
+        font-size: 1.2em;
+    }
+    .card-text-impulsa,
+    .card-text-experience,
+    .card-text-conect{
+        height: auto;
+    }
+
+
 }

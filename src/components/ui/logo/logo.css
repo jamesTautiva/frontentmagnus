@@ -1,6 +1,17 @@
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+        color: var(--colorText);
+        font-family: "Poppins", sans-serif;
+    }
+
+}
 .logo{
     font-size: 3rem;
     font-family: "UnifrakturMaguntia", serif;
-    
 }
 

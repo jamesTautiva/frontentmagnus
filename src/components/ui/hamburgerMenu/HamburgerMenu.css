@@ -17,7 +17,7 @@
 .line {
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: white;
     transition: transform 0.5s ease;
 }
 
@@ -39,30 +39,35 @@
     transform: translateY(-20px);
     transition: opacity 0.5s ease, transform 0.3s ease;
     z-index: -1;
+    border-radius: 20px;
+    border: 1px solid var(--colorText);
     display: none;
 }
 
 .menu.is-open {
     display: flex;
     z-index: 1000;
-  
+    background-color: var(--colorPrimaryOpas);
     opacity: 1;
     transform: translateY(0);
+    
 
+}
+.line.is-open{
+    background-color: var(--colorPrimary);
 }
 
 .menu a {
     text-decoration: none;
-    color: black;
+    color: var(--colorText);
     padding: 10px 0;
     font-size: 5rem;
     font-family: "Almendra", serif;
 }
 
 .menu a:hover {
-    color: #f8f9fa;
     width: 100%;
-    background-color: black;
+    background-color: var(--colorBackground);
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.8s ease-in;

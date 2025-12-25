@@ -1,0 +1,167 @@
+.content-artist {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+    background-color: #121212;
+    /* Dark background */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    /* Assuming a modern font is available or falls back */
+}
+
+.content-artist h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.albums-controllers {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.albums-controllers button {
+    background-color: #1db954;
+    /* Spotify-like green or brand color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.albums-controllers button:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
+/* contentArtist.css */
+
+.content-artist {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.albums-controllers {
+    margin-bottom: 25px;
+}
+
+/* Botones base */
+.btn-primary, .btn-secondary, .btn-danger {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gris */
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Grid de Álbumes */
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.album-card {
+    background-color: #141414;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.album-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-details {
+    padding: 15px;
+}
+
+.album-details h3 {
+    margin-top: 0;
+    color: #727272;
+    font-size: 1.2em;
+}
+
+/* Estilos de Estatus (el color solicitado) */
+.album-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.status-approved {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.status-pending {
+    background-color: #ffc107; /* Amarillo */
+    color: #333; /* Texto oscuro para contraste */
+}
+
+.status-denied {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+.album-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px 15px;
+    border-top: 1px solid #eee;
+}
+.album-actions button {
+    flex-grow: 1;
+    margin: 0 5px;
+}

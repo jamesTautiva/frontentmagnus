@@ -1,5 +1,6 @@
 import { Header } from '../../components/layout/header/header';
 import { Footer } from '../../components/layout/footer/footer';
+import imgApp from '../../assets/app.png';
 
 import './home.css';
 
@@ -11,7 +12,7 @@ export const Home = () => {
             <Header />
             <section className='home-content'>
                 <div className='home-img'>
-                    <h1>Welcome to Magnus</h1>
+                    <h1>Welcome to CoreZone</h1>
                     <p>Find your favorite bands and concerts in one place!</p>
                 </div>
             </section>
@@ -33,6 +34,18 @@ export const Home = () => {
                         <div className='card-text-conect'>
                         <h2>Conecta música y comunidad</h2>
                         <p>Únete a una comunidad que comparte tu pasión. Descubre, comparte y apoya la escena metalera local mientras disfrutas de contenido exclusivo y te mantienes al día con eventos y lanzamientos.</p>
+                        </div>
+                        <div className='card-text-conect line-break'>
+                            <h2>Espacio para bandas independientes</h2>
+                            <p>Brinda visibilidad a artistas emergentes que no encuentran oportunidades en plataformas generalistas, fortaleciendo la escena underground.</p>
+                        </div>
+
+                    </div>
+                    <div className=' app-card ' >
+                        <img src={imgApp} alt="" />
+                        <div className='card-text-conect'>
+                            <h2>App móvil para estar siempre conectado</h2>
+                            <p>Lleva la música contigo a todas partes con nuestra app móvil. Accede a tu biblioteca, descubre nuevas bandas y mantente conectado con la escena metalera dondequiera que vayas.</p>
                         </div>
                     </div>
 
